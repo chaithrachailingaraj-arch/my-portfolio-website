@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Chaithra Developer Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:black;
+color:white;
+overflow-x:hidden;
+}
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+}
+
+nav a{
+color:#00ffff;
+margin:15px;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:white;
+}
+
+section{
+min-height:100vh;
+padding:120px 10%;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+.hero h1{
+font-size:50px;
+color:#00ffff;
+}
+
+.typing{
+font-size:25px;
+margin-top:10px;
+color:#00ffcc;
+}
+
+.profile{
+width:200px;
+border-radius:50%;
+box-shadow:0 0 25px cyan;
+}
+
+.btn{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:#00ffff;
+color:black;
+font-weight:bold;
+border-radius:30px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:white;
+}
+
+/* SKILLS */
+
+.skills{
+margin-top:40px;
+}
+
+.skill{
+margin-bottom:25px;
+}
+
+.bar{
+background:#222;
+height:20px;
+border-radius:20px;
+}
+
+.progress{
+height:20px;
+background:#00ffff;
+border-radius:20px;
+animation:load 3s forwards;
+}
+
+.html{width:70%;}
+.css{width:80%;}
+.js{width:35%;}
+.python{width:40%;}
+.cprogramming{width:80%;}
+
+@keyframes load{
+from{width:0%}
+}
+
+/* EDUCATION */
+
+.education-container{
+margin-top:50px;
+position:relative;
+padding-left:30px;
+border-left:3px solid cyan;
+}
+
+.edu-item{
+margin-bottom:40px;
+position:relative;
+padding-left:20px;
+}
+
+.edu-item::before{
+content:'';
+position:absolute;
+left:-11px;
+top:5px;
+width:20px;
+height:20px;
+background:cyan;
+border-radius:50%;
+box-shadow:0 0 10px cyan;
+}
+
+.edu-box{
+background:rgba(255,255,255,0.05);
+padding:20px;
+border-radius:10px;
+transition:0.4s;
+}
+
+.edu-box:hover{
+transform:translateY(-5px);
+box-shadow:0 0 15px cyan;
+}
+
+.edu-box h3{
+color:cyan;
+}
+
+.edu-year{
+font-size:14px;
+color:#aaa;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.project{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:15px;
+transition:0.4s;
+}
+
+.project:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px cyan;
+}
+
+/* CONTACT */
+
+footer{
+text-align:center;
+padding:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+
+<h2 style="color:cyan;">Chaithra</h2>
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#education">Education</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="about">
+
+<div>
+
+<h1>Hii I'm Chaithra</h1>
+
+<div class="typing">
+<span id="text"></span>
+</div>
+
+<a href="" download>
+<button class="btn">vist my linkedIn</button>
+</a>
+
+</div>
+
+<img src="chaii.jpeg" class="profile">
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 style="color:cyan;">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+<p>HTML</p>
+<div class="bar">
+<div class="progress html"></div>
+</div>
+</div>
+
+<div class="skill">
+<p>CSS</p>
+<div class="bar">
+<div class="progress css"></div>
+</div>
+</div>
+
+<div class="skill">
+<p>JavaScript</p>
+<div class="bar">
+<div class="progress js"></div>
+</div>
+</div>
+
+<div class="skill">
+<p>c programming</p>
+<div class="bar">
+<div class="progress cprogramming"></div>
+</div>
+</div>
+
+<div class="skill">
+<p>Python</p>
+<div class="bar">
+<div class="progress python"></div>
+</div>
+</div>
+
+
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2 style="color:cyan;">Education</h2>
+
+<div class="education-container">
+
+<div class="edu-item">
+<div class="edu-box">
+<h3>Bachelor of Engineering</h3>
+<p>Computer Science Engineering</p>
+<p>SGPA-9.43</p>
+<p class="edu-year">2025 – 2029</p>
+<p>VTU University</p>
+</div>
+</div>
+
+<div class="edu-item">
+<div class="edu-box">
+<h3>PUC (12th)</h3>
+<p>Science Stream</p>
+<p>percentage-94.5%</p>
+<p class="edu-year">2023 – 2025</p>
+<p>State Board</p>
+</div>
+</div>
+
+<div class="edu-item">
+<div class="edu-box">
+<h3>SSLC (10th)</h3>
+<p class="edu-year">2023</p>
+<p>percentage-95.8%</p>
+<p>State Board</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 style="color:cyan;">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>Modern animated portfolio using HTML CSS JS</p>
+</div>
+
+<div class="project">
+<h3>A Real time working website</h3>
+<p>Smart tourist safety system</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 style="color:cyan;">Contact</h2>
+
+<p>Email : chaithrachailingaraj@gmail.com</p>
+<p>Phone : 6362854227</p>
+
+</section>
+
+<footer>
+
+<p>2026 Chaithra Portfolio</p>
+
+</footer>
+
+<script>
+
+/* typing effect */
+
+var text="Engineering student |  Interest in AI  | like to build creative projects.";
+let i=0;
+
+function typing(){
+
+if(i<text.length){
+
+document.getElementById("text").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(typing,70);
+
+}
+
+}
+
+typing();
+
+/* particles background */
+
+particlesJS("particles-js",{
+
+particles:{
+number:{value:80},
+size:{value:3},
+move:{speed:2},
+line_linked:{
+enable:true,
+color:"#00ffff"
+}
+}
+
+});
+
+</script>
+
+</body>
+</html>
