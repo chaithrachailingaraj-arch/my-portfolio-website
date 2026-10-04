@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-<img src=""C:\Users\CHAITHRA L\OneDrive\Pictures\Screenshots\Screenshot 2026-10-04 215524.png" alt="my portfolio screenshot" title="my porfolio" >
+<img src="C:\Users\CHAITHRA L\OneDrive\Pictures\Screenshots\Screenshot 2026-10-04 215524.png" alt="my portfolio screenshot" title="my porfolio" >
     
 </body>
 </html>
